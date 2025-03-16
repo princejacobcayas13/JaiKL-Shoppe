@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JaiKL Shoppe</title>
+<link rel="icon" type="image/x-icon" href="file:///C:/Users/princ/Downloads/f81aca06-7a38-4f6f-b0ca-b393db67bf1b.jpg">
+<header>
+<body style="background-color:pink;">
+<style>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Beauty Shoppe">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Prince Jacob Cayas">
+</style>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #ff0000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="https://formspree.io/f/xkgjgwoq" method="post">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+<h1 style="font-family:lucida handwriting;">JaiKL Shoppe</h1>
+<p style="font-family:verdana;">Are you looking for Beauty, Hair Care and Personal Hygiene Products? We got you! We sell our best-selling products in the market! Add to cart and checkout now!</p>
+<br>
+<h1 style="font-family:lucida console;">History of Our Shoppe</h1>
+<p style="font-family:verdana;">JaiKL started on April 10, 2019. The name "JaiKL" originated from the name of my cousin, "Jai Keith Lewis.". We sell beauty, hair care, and personal hygiene products. These products are imported from The United States of America (USA).</p>
+<br>
+<br>
+<h2 style="font-family:lucida console;">Beauty Products Categories</h2>
+<ul style="font-family:verdana;">
+  <li>Lipstick</li>
+  <li>Pressed Powder</li>
+  <li>Makeup</li>
+  <li>Eyeliner</li>
+  <li>Foundation</li>
+</ul>  
+<br>
+<br>
+<h2 style="font-family:lucida console;">Hair Care Products Categories</h2>
+<ul style="font-family:verdana;">
+  <li>Shampoo</li>
+  <li>Conditioner</li>
+  <li>Hair Serum</li>
+  <li>Keratin Treatment</li>
+  <li>Hair Mousse</li>
+</ul>  
+<br>
+<br>
+<br>
+<h2 style="font-family:lucida console;">Personal Hygiene Products Categories</h2>
+<ul style="font-family:verdana;">
+  <li>Mouthwash</li>
+  <li>Toothpaste</li>
+  <li>Toothbrush</li>
+  <li>Dental Floss</li>
+  <li>Deodorant</li>
+</ul>  
+<br>
+<br>
+<h1 style="font-size:50px;text-align: center;font-family:lucida handwriting;">Order Here!</h1> 
+<br>
+<br>
+<br> 
+<h1 style="text-align: center;">Beauty Products</h1>
+<h2 style="text-align: center;font-family:verdana;">(Maybelline)</h2>
+<br>
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: black;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+</style>
+<div class="card">
+  <img src="https://th.bing.com/th/id/OIP.aeCQK3eqAdOsXkhXkQwdHgHaHa?rs=1&pid=ImgDetMain" alt="Maybelline Superstay Matte Ink" style="width:100%">
+  <h1>Maybelline Superstay Matte Ink</h1>
+  <p class="price">₱449</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://th.bing.com/th/id/OIP.gZGs150tl4o7dUIklOMOswAAAA?rs=1&pid=ImgDetMain" alt="Maybelline Superstay Foundation" style="width:100%">
+  <h1>Maybelline Superstay Foundation</h1>
+  <p class="price">₱599</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://th.bing.com/th/id/OIP.0fC45AfIIBBo2YLp-l4n4AHaHa?rs=1&pid=ImgDetMain" alt="Maybelline Superstay Pressed Powder" style="width:100%">
+  <h1>Maybelline Superstay Pressed Powder</h1>
+  <p class="price">₱449</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://veelabeauty.com/image/cache/catalog/IMG/Maybelline/Untitled-12679f60-1400x1400.jpg" alt="Maybelline Fit me Flying Eyeliner" style="width:100%">
+  <h1>Maybelline Fit me Flying Eyeliner</h1>
+  <p class="price">₱299</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 style="text-align: center;font-family:verdana;">(Revlon)</h2>
+<br>
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/91EywCzmUgL.jpg" alt="Revlon Super Lustrous Lipstick Pearl Finish" style="width:100%">
+  <h1>Revlon Super Lustrous Lipstick Pearl Finish</h1>
+  <p class="price">₱349</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/81hZFkdsyZL.jpg" alt="Revlon ColorStay Makeup for Combo/Oily Skin" style="width:100%">
+  <h1>Revlon ColorStay Makeup for Combo/Oily Skin</h1>
+  <p class="price">₱699</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://www.aozhoumama.com.au/images/AM10198-01.jpg" alt="Revlon ColorStay Pressed Powder Oil-free Ultra-Fine Lightweight Texture" style="width:100%">
+  <h1>Revlon ColorStay Pressed Powder Oil-free Ultra-Fine Lightweight Texture</h1>
+  <p class="price">₱599</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://images-na.ssl-images-amazon.com/images/I/51EsvGJSZdL.jpg" alt="Revlon ColorStay Eyeliner Pencil" style="width:100%">
+  <h1>Revlon ColorStay Eyeliner Pencil</h1>
+  <p class="price">₱349</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 style="text-align: center;font-family:verdana;">(Rimmel)</h2>
+<br>
+<div class="card">
+<img src="https://media-photos.depop.com/b0/26625067/1102971506_6389b7a2f238458d8f684faa77b11004/P0.jpg" alt="Rimmel Lasting Finish Lipstick" style="width:100%">
+  <h1>Rimmel Lasting Finish Lipstick</h1>
+  <p class="price">₱349</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://th.bing.com/th/id/R.20c5a8922ea32219e4c33c9e990539b1?rik=j62AmsZxRkrfsQ&riu=http%3a%2f%2fwww.thefuss.co.uk%2fwp-content%2fuploads%2f2016%2f07%2frimmel-match-perfection-foundation-6.jpg&ehk=V66sc0B3GO8NeaW3Z42%2bBIzqxBnvVQdLlChVmYSeGgE%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Rimmel Match Perfection Foundation" style="width:100%">
+  <h1>Rimmel Match Perfection Foundation</h1>
+  <p class="price">₱699</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://www.aozhoumama.com.au/images/AM15995-01.jpg" alt="Rimmel Stay Matte Face Pressed Powder" style="width:100%">
+  <h1>Rimmel Stay Matte Face Pressed Powder</h1>
+  <p class="price">₱699</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://i.ebayimg.com/images/g/gy8AAOSwRoVfX4ag/s-l640.jpg" alt="Rimmel Soft Kohl Kajal Eyeliner Pencil" style="width:100%">
+  <h1>Rimmel Soft Kohl Kajal Eyeliner Pencil</h1>
+  <p class="price">₱249</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 style="text-align: center;font-family:verdana;">(Covergirl)</h2>
+<br>
+<div class="card">
+<img src="https://slashedbeauty.com/wp-content/uploads/2020/01/covergirl-exhibitionist-ultra-matte-lipstick-swatches.jpg" alt="Covergirl Exhibitionist 24Hr Ultra Matte Lipsticks" style="width:100%">
+  <h1>Covergirl Exhibitionist 24Hr Ultra Matte Lipsticks</h1>
+  <p class="price">₱399</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://i.pinimg.com/originals/15/67/8e/15678ef5732a27b3d96c36e9c76b0122.jpg" alt="Covergirl Clean Matte Liquid Foundation" style="width:100%">
+  <h1>Covergirl Clean Matte Liquid Foundation</h1>
+  <p class="price">₱599</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://s3.images-iherb.com/cvg/cvg08234/l/0.jpg" alt="Covergirl Advance Radiance Age-Defying Pressed Powder" style="width:100%">
+  <h1>Covergirl Advance Radiance Age-Defying Pressed Powder</h1>
+  <p class="price">₱699</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://i.ebayimg.com/images/g/j~YAAOSwH2Fj2CfL/s-l400.jpg" alt="Covergirl Perfect Blend Eyeliner Pencil" style="width:100%">
+  <h1>Covergirl Perfect Blend Eyeliner Pencil</h1>
+  <p class="price">₱299</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 style="text-align: center;">Hair Care Products</h1>
+<br>
+<h2 style="text-align: center;font-family:verdana;">(Garnier)</h2>
+<br>
+<div class="card">
+<img src="https://i5.walmartimages.com/asr/b0c70a6d-65cc-4c02-8908-07ced3ed09b1_1.e480cc3e008e21c7899c9939c06fffb7.jpeg" alt="Garnier Whole Blends Honey Treasures Repairing Shampoo" style="width:100%">
+  <h1>Garnier Whole Blends Honey Treasures Repairing Shampoo</h1>
+  <p class="price">₱349</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://i5.walmartimages.com/asr/c5805be3-2f56-482e-87f3-e542445a8a6a.38b9dff43b7cfd5daadbf59fcbc0a156.jpeg" alt="Garnier Whole Blends Honey Treasures Repairing Conditioner" style="width:100%">
+  <h1>Garnier Whole Blends Honey Treasures Repairing Conditioner</h1>
+  <p class="price">₱349</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/71rFoSbBgXL.jpg" alt="Garnier Fructis Sleek and Shine Anti-Frizz Serum" style="width:100%">
+  <h1>Garnier Fructis Sleek and Shine Anti-Frizz Serum</h1>
+  <p class="price">₱349</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://www.garnierusa.com/-/media/project/loreal/brand-sites/garnier/usa/us/pdp_images/fructis_style/sky-hi-volume-mousse/fructis_style_sky_hi_volume_volumizing_mousse_64_front_v1.jpg" alt="Garnier Fructis Style Sky-Hi Volumizing Hair Mousse" style="width:100%">
+  <h1>Garnier Fructis Style Sky-Hi Volumizing Hair Mousse</h1>
+  <p class="price">₱299</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 style="text-align: center;font-family:verdana;">(Tresemme)</h2>
+<br>
+<div class="card">
+<img src="https://i5.walmartimages.com/asr/85a26453-ad1a-4f76-a8d2-620b6da1e960.c4b6ea6ef2102550b09a6c603930f639.jpeg" alt="Tresemme Shampoo Moisture Rich" style="width:100%">
+  <h1>Tresemme Shampoo Moisture Rich</h1>
+  <p class="price">₱349</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://i5.walmartimages.com/asr/b4b6c69b-696b-4aee-9bdb-1839965b7b61.caedb10e9f67c6196544ab79deafba6c.jpeg" alt="Tresemme Conditioner Moisture Rich" style="width:100%">
+  <h1>Tresemme Conditioner Moisture Rich</h1>
+  <p class="price">₱349</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://i5.walmartimages.com/asr/2d2cc040-bc21-4d7b-8001-3cd9442bf139_1.0f23e208d035e661ef966b14f4a6d41d.jpeg" alt="Tresemme Keratin Smooth Heat Protectant Spray" style="width:100%">
+  <h1>Tresemme Keratin Smooth Heat Protectant Spray</h1>
+  <p class="price">₱349</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://i5.walmartimages.com/asr/6259195e-1bbe-483b-97a5-5c9ed53de316_1.0f0a31f7fde2b25daae1f9f8a05e2658.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff" alt="Tresemme Keratin Smooth Hair Serum" style="width:100%">
+  <h1>Tresemme Keratin Smooth Hair Serum</h1>
+  <p class="price">₱299</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://i5.walmartimages.com/asr/7e067fce-ed21-4a0f-851d-0ee4a7f57a67.cebbd875f1f06583b8544d4c75cda3e5.jpeg" alt="Tresemme Extra Hold Extra Firm Control Hair Mousse" style="width:100%">
+  <h1>Tresemme Extra Hold Extra Firm Control Hair Mousse</h1>
+  <p class="price">₱299</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 style="text-align: center;font-family:verdana;">(Head and Shoulders)</h2>
+<br>
+<div class="card">
+<img src="https://th.bing.com/th/id/OIP.q1EU5BKfBGjS2Ys2l0huPAHaHa?rs=1&pid=ImgDetMain" alt="Head and Shoulders Smooth and Silky Shampoo" style="width:100%">
+  <h1>Head and Shoulders Smooth and Silky Shampoo</h1>
+  <p class="price">₱349</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://i5.walmartimages.com/seo/Head-And-Shoulders-Green-Apple-Conditioner-13-5-Fl-Oz-Packaging-May-Vary_d9579753-4b0d-4efd-9edd-637b18aff985.734bb8e982f46a440be02d665d8e8661.jpeg" alt="Head and Shoulders Green Apple Condtioner" style="width:100%">
+  <h1>Head and Shoulders Green Apple Condtioner</h1>
+  <p class="price">₱349</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://th.bing.com/th/id/OIP.PiCHLTmouKY_Zb9OoruKTwHaHa?rs=1&pid=ImgDetMain" alt="Head and Shoulders Serum Dermax Pro Strength" style="width:100%">
+  <h1>Head and Shoulders Serum Dermax Pro Strength</h1>
+  <p class="price">₱299</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 style="text-align: center;font-family:verdana;">(Pantene)</h2>
+<br>
+<div class="card">
+<img src="https://i5.walmartimages.com/asr/b39a5149-3545-44c6-9ae9-05d981182395_1.3359351509595f475edb4b37ca989e6a.jpeg" alt="Pantene Pro-V Daily Moisture Renewal Shampoo" style="width:100%">
+  <h1>Pantene Pro-V Daily Moisture Renewal Shampoo</h1>
+  <p class="price">₱349</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://i5.walmartimages.com/asr/f39d786f-33b8-49db-bd5d-d3261b2056bb.e25c0be1ce1de93ac81831c37fc1cd89.jpeg" alt="Pantene Pro-V Daily Moisture Renewal Conditioner" style="width:100%">
+  <h1>Pantene Pro-V Daily Moisture Renewal Conditioner</h1>
+  <p class="price">₱349</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://i5.walmartimages.com/asr/cbaca77f-218f-4db1-a307-a43eb6dda19a_1.63886c1bf390e7871594fef198ceeacc.jpeg" alt="Pantene Pro-V Smoothing Hair Oil Serum" style="width:100%">
+  <h1>Pantene Pro-V Smoothing Hair Oil Serum</h1>
+  <p class="price">₱299</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://cdn.bmstores.co.uk/images/hpcProductImage/imgSource/369975-pantene-keratin-oil-100ml.jpg" alt="Pantene Pro-V Keratin Oil" style="width:100%">
+  <h1>Pantene Pro-V Keratin Oil</h1>
+  <p class="price">₱299</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://th.bing.com/th/id/R.4fc19b79bd4fe57969c71cb2b7e487b1?rik=EuaA%2b2QG1NqiYA&riu=http%3a%2f%2fc.shld.net%2frpx%2fi%2fs%2fi%2fspin%2f10127449%2fprod_ec_1576339402%3f%3fhei%3d64%26wid%3d64%26qlt%3d50&ehk=KXEsWSmrQ06iwIt4qd9ueFMq19l29%2fHGs8oDskefPlo%3d&risl=&pid=ImgRaw&r=0" alt="Pantene Pro-V Curly Hair Style Mousse" style="width:100%">
+  <h1>Pantene Pro-V Curly Hair Style Mousse</h1>
+  <p class="price">₱299</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 style="text-align: center;">Personal Hygiene Products</h1>
+<br>
+<h2 style="text-align: center;font-family:verdana;">(Colgate)</h2>
+<br>
+<div class="card">
+<img src="https://i5.walmartimages.com/asr/80d9c95d-3c7d-476b-a293-a29318d01ac1_1.672644d08554bdfeded565e9a1128664.png" alt="Pantene Pro-V Curly Hair Style Mousse" style="width:100%">
+  <h1>Colgate Optic White Advanced Toothpaste</h1>
+  <p class="price">₱299</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://th.bing.com/th/id/OIP.DdZ8HSHTrDO-eezoB9oV0AHaHa?w=768&h=768&rs=1&pid=ImgDetMain" alt="Colgate Total Mouthwash" style="width:100%">
+  <h1>Colgate Total Mouthwash</h1>
+  <p class="price">₱249</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://cdn0.woolworths.media/content/wowproductimages/large/780273.jpg" alt="Colgate Slim Soft Charcoal Toothbrush" style="width:100%">
+  <h1>Colgate Slim Soft Charcoal Toothbrush</h1>
+  <p class="price">₱149</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://img10.hkrtcdn.com/650/prd_64929_o.jpg" alt="Colgate Total Dental Floss" style="width:100%">
+  <h1>Colgate Total Dental Floss</h1>
+  <p class="price">₱149</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 style="text-align: center;font-family:verdana;">(Old Spice)</h2>
+<br>
+<div class="card">
+<img src="https://i5.walmartimages.com/asr/e47d3592-fb5b-48c2-b22b-566f3d1e34bd.959d21780ebe6b2c3a83028dded1858c.jpeg" alt="Old Spice High Endurance Original Deodorant" style="width:100%">
+  <h1>Old Spice High Endurance Original Deodorant</h1>
+  <p class="price">₱299</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://i5.walmartimages.com/asr/37f9763b-daa1-4809-93f5-11a77767ebad.e439b571ace963bf390d27d0f3f4bc22.jpeg" alt="Old Spice Bearglove Deodorant Body Spray" style="width:100%">
+  <h1>Old Spice Bearglove Deodorant Body Spray</h1>
+  <p class="price">₱299</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 style="text-align: center;font-family:verdana;">(Axe)</h2>
+<br>
+<div class="card">
+<img src="https://assets.unileversolutions.com/v1/36733467.jpg" alt="Axe Antiperspirant Deodorant" style="width:100%">
+  <h1>Axe Antiperspirant Deodorant</h1>
+  <p class="price">₱299</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<div class="card">
+<img src="https://www.fragrancereview.com/php_assets/uploads/2022/12/Best-Axe-Body-Spray-Scents.jpg" alt="Axe Antiperspirant Deodorant Body Spray" style="width:100%">
+  <h1>Axe Antiperspirant Deodorant Body Spray</h1>
+  <p class="price">₱299</p>
+  <p></p>
+  <p><button>Add to Cart</button></p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 style="text-align: center;">Contact Information:</h1>
+<h3 style="text-align: center;">09553104706</h3>
+<h3 style="text-align: center;">09368207238</h3>
+<br>
+<br>
+<br>
+<br>
+<form action="https://formspree.io/f/xnnpnajy" method="post">
+  <textarea name="message" rows="10" cols="30"></textarea>
+  <br><br>
+  <input type="submit">
+</form>
+<br>
+<br>
+<p style="text-align: center;">Thank you for shopping! We hope that you found the product that you need. Please leave a feedback if you want &#128513;</p>
+<br>
+<br>
+
+<footer>
+  <p style="text-align: center;"><i>©2019 JaiKL Shoppe | All Rights Reserved.</i></p>
+  
+</footer>
+</body>
+</html>
+
+
+
